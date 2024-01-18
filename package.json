@@ -1,0 +1,20 @@
+{ 
+  "name": "showpass_demo_project",
+  "version": "1.0.0",
+  "description": "discover best practices for effectively utilizing the Cypress framework",
+  "main": "index.js",
+  "scripts": {
+    "ui-regression:chrome": "cypress run --spec 'cypress/e2e/**/*' --browser chrome",
+    "ui-regression:electron": "cypress run --spec 'cypress/e2e/**/*' --browser electron",
+    "install:dependencies": "npm install",
+    "cypress:run": "cypress run"
+  },
+  "dependencies": {
+    "cypress": "^13.6.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "cypress-mochawesome-reporter": "^3.8.0",
+    "cypress-wait-for-stable-dom": "^0.1.0"
+  }
+}

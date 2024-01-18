@@ -1,0 +1,5 @@
+{
+    "wrongEmail": "someEmail.com",
+    "errorMessage1": "Invalid email address",
+    "errorMessage2": "Unable to log in with provided credentials."
+  }
