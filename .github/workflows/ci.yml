@@ -1,4 +1,4 @@
-name: showpass
+name: showpass_demo_project
 
 on:
   push:
