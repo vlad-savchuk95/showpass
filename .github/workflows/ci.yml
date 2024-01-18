@@ -23,7 +23,7 @@ jobs:
           record: true
 
       - name: Uploading artifact (Chrome)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: cypress-execution-report-chrome
@@ -37,7 +37,7 @@ jobs:
           record: true
 
       - name: Uploading artifact (Electron)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: cypress-execution-report-electron

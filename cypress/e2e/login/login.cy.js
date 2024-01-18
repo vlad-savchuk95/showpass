@@ -3,7 +3,6 @@ import header from "../../fixtures/page_object/header";
 const loginPageData = require("../../fixtures/test_data/login.json");
 const userEmail = Cypress.env("userEmail");
 const userPassword = Cypress.env("userPassword");
-const url = Cypress.env("loginUrl");
 
 describe("Login", () => {
   beforeEach(() => {
