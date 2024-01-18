@@ -3,7 +3,7 @@ name: showpass_demo_project
 on:
   push:
     branches:
-      - main
+      - master
   schedule:
     - cron: '0 */5 * * *'  # Runs every 5 hours (0 */5 * * *)
 
