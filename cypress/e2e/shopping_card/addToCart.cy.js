@@ -20,6 +20,7 @@ describe("Shopping Cart", () => {
     commonLocators.buyButton.click();
     commonLocators.addItemButton.click();
     commonLocators.checkoutButton.click();
+    cartPage.reviewButton.click();
     cartPage.eventTitle.should('contain.text', `${eventName}`);
     });
     cartPage.removeTicketsButton.click();
