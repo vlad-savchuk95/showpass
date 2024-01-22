@@ -10,15 +10,11 @@ describe("Registration", () => {
     cy.visit(registrationPage.registrationUrl);
   });
   
-//   it("Should register new user", () => {
-//     registrationPage.firstNameInput.type(userData.firstName);
-//     registrationPage.lastNameInput.type(userData.lastName);
-//     registrationPage.emailInput.type(userData.email);
-//     registrationPage.passwordInput.type(userData.password);
-//     registrationPage.passwordConfirmInput.type(userData.password);
-//     registrationPage.createAccountButton.click();
-//     header.errorMessageGeneral.contains(registrationPageData.accountCreated).should('be.visible');  
-//   });
+  it("Should register new user", () => {
+    registrationPage.registerUser(userData)
+    registrationPage.createAccountButton.click();
+    header.errorMessageGeneral.contains(registrationPageData.accountCreated).should('be.visible');  
+  });
 
   it("Should not be able to register with an existing email", () => {
     registrationPage.firstNameInput.type(userData.firstName);
