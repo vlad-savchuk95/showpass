@@ -12,8 +12,6 @@ To install, follow these steps:
 
 Download these repo: git clone https://github.com/vlad-savchuk95/showpass
 
-Install Cypress: npm install cypress
-
 Install project dependencies: npm install
 
 **Run**
